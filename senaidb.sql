@@ -1,1 +1,9 @@
-curl -X POST https://api.zerosheets.com/v1/yfr -H "Content-Type: application/json" -d '{"item": "Iara", "Status":"Iniciado"}'
+create table todolist(
+"_lineNumber" serial primary key,
+item varchar(250),
+status varchar(100)
+);
+
+insert into todolist(item, status) values('Comprar Pão', 'Iniciado');
+
+select * from todolist;
